@@ -24,7 +24,7 @@
         input, select, button {
             padding: 8px;
             margin-top: 5px;
-            width: 100%;
+            width: 90%;
         }
 
         .gender-group input {
