@@ -1,0 +1,74 @@
+<!Doctype html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Flex Box Practice Card Making</title>
+
+    <style>
+        /* reset default spacing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .flex-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* card design */
+        .card{
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #000000;
+        }
+        .card h3{
+            margin-bottom: 10px;
+        }
+        .card p{
+            color: #555;
+        }
+
+       /* responsive design */
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+ </head>    
+    <body>
+        <h1>Flex Box Practice Card Making</h1>
+        <div class="flex-container">
+            <div class="card">
+                <h3>Card Title 1</h3>
+                <p>This is a description for card 1. It contains some sample text to illustrate the card design.</p>
+            </div>
+            <div class="card">
+                <h3>Card Title 2</h3>
+                <p>This is a description for card 2. It contains some sample text to illustrate the card design.</p>
+            </div>
+            <div class="card">
+                <h3>Card Title 3</h3>
+                <p>This is a description for card 3. It contains some sample text to illustrate the card design.</p>
+            </div>
+        </div>
+    </body>
+</html> 
